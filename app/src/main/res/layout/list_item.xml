@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imagePerson"
+        android:layout_width="144dp"
+        android:layout_height="261dp"
+        android:src="@drawable/elon_musk" />
+
+    <TextView
+    android:id="@+id/name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Name"
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+    android:id="@+id/money"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Money: "
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+    android:id="@+id/age"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Age: "
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:id="@+id/source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sourse: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:id="@+id/contry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contry: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <ImageView
+        android:id="@+id/flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/flag_russia"/>
+
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Simulated Forbes List</string>
+    <string-array name="forbes">
+        <item>Elon Musk</item>
+        <item>Larry Page</item>
+        <item>Sergey Brin</item>
+        <item>Jeff Bezos</item>
+        <item>Mark Zuckerberg</item>
+        <item>Larry Ellison</item>
+        <item>Bernard Arnault</item>
+        <item>Jensen Huang</item>
+        <item>Warren Buffett</item>
+        <item>Amancio Ortega</item>
+        <item>Rob Walton</item>
+        <item>Jim Walton</item>
+        <item>Michael Dell</item>
+        <item>Alice Walton</item>
+        <item>Steve Ballmer</item>
+        <item>Carlos Slim Helu</item>
+        <item>Changpeng Zhao</item>
+        <item>Michael Bloomberg</item>
+        <item>Bill Gates</item>
+        <item>Francoise Bettencourt Meyers</item>
+    </string-array>
+</resources>
