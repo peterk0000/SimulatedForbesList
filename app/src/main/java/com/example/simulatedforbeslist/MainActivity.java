@@ -1,13 +1,14 @@
 package com.example.simulatedforbeslist;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +20,18 @@ public class MainActivity extends AppCompatActivity {
         ForbesListAdapter adapter = new ForbesListAdapter(this, makePerson());
         ListView listView = (ListView) findViewById(R.id.forbes);
         listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String name = ((Person)parent.getItemAtPosition(position)).name;
+                String url = "https://yandex.ru/search&q=" + name.replace(" ", "+");
+
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+            }
+        });
     }
 
     Person[] makePerson() {
